@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><!-- Define la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Hace la página responsive en móviles -->
+  <title>Mi Mundo - Bahar</title><!-- Título que aparece en la pestaña del navegador -->
+
+  <style>
+    /* --- ESTILOS GLOBALES --- */
+    body {
+      background-color: #FF97D9; /* Fondo rosa */
+      color: white; /* Texto blanco por defecto */
+      font-family: fantasy; /* Fuente general de la página */
+      margin: 0; /* Quita margen por defecto del navegador */
+      padding: 0; /* Quita padding por defecto */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+
+    /* Aplica el color blanco y fuente fantasy a todos los textos importantes */
+    h1, h2, h3, h4, h5, h6, p, li, td, th {
+      color: white;
+      font-family: fantasy;
+    }
+
+    /* Estilo de enlaces generales */
+    a {
+      color: white; /* Color blanco */
+      text-decoration: none; /* Sin subrayado */
+    }
+
+    /* Hover específico para enlaces dentro del menú */
+    nav li a:hover {
+      background-color: #FFB6C1 !important; /* Rosa claro al pasar el ratón */
+    }
+
+    /* --- MENÚ SUPERIOR --- */
+    nav {
+      background-color: #C13574; /* Fondo del menú */
+    }
+
+    nav ul {
+      list-style: none; /* Quita viñetas */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Muestra los elementos en fila */
+      justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    nav li a {
+      display: block; /* Que el enlace ocupe todo el bloque del li */
+      padding: 14px 20px; /* Espaciado interno */
+      color: white; /* Texto blanco */
+      text-decoration: none; /* Sin subrayado */
+    }
+
+    nav li a:hover {
+      background-color: #555; /* Color gris oscuro al pasar el ratón (puedes cambiar) */
+    }
+
+    /* --- TRES COLUMNAS --- */
+    .contenedor {
+      display: flex; /* Usamos flexbox para columnas */
+      flex-direction: row; /* En fila */
+      padding: 20px; /* Espacio interno */
+      gap: 20px; /* Espacio entre columnas */
+      width: 100%; /* Ancho total */
+      box-sizing: border-box; /* Incluye padding en el ancho */
+    }
+
+    .columna {
+      flex: 1; /* Todas las columnas ocupan el mismo ancho */
+      padding: 20px; /* Espacio interno */
+      box-sizing: border-box;
+      min-width: 0; /* Evita que se rompa el diseño */
+    }
+
+    /* Colores de cada columna específica */
+    .contenedor .columna:nth-child(1) { background-color: #FF69B4; } /* rosa fuerte */
+    .contenedor .columna:nth-child(2) { background-color: #F77737; } /* naranja */
+    .contenedor .columna:nth-child(3) { background-color: #FFD700; } /* amarillo */
+
+    /* --- PIE DE PÁGINA --- */
+    footer {
+      background-color: #C13574; /* Fondo rosa oscuro */
+      color: white; /* Texto blanco */
+      text-align: center; /* Centrado */
+      padding: 15px 0; /* Espaciado vertical */
+      margin-top: 20px; /* Separación del contenido superior */
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 700px) {
+      .contenedor {
+        flex-direction: column; /* En móviles las columnas se apilan */
+      }
+    }
+
+    /* --- BANNER --- */
+    .banner {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      height: auto; /* Mantiene proporciones */
+      display: block; /* Evita que aparezcan elementos inline al lado */
+      margin: 20px 0; /* Margen superior e inferior */
+    }
+
+    /* --- TABLAS --- */
+    table {
+      width: 430px; /* Ancho fijo de tabla */
+      height: 430px; /* Alto fijo de tabla */
+      border-collapse: collapse; /* Quita separación entre celdas */
+      margin: 0 auto; /* Centra la tabla */
+    }
+
+    td {
+      width: 50%; /* Cada celda ocupa la mitad */
+      height: 50%;
+      text-align: center; /* Centra horizontalmente contenido */
+      vertical-align: middle; /* Centra verticalmente contenido */
+      border: none; /* Sin borde */
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- TÍTULO PRINCIPAL -->
+<h1>˖˳·☾ ˖✮ ִֶָ ⋆ ִֶָ˖MI MUNDO ִֶָ.. . ⋆˙. ࣪ ִֶָ☾. ✮⋆˙. ‧</h1>
+
+<!-- PÁRRAFO DE PRESENTACIÓN -->
+<p>¡HOLA! Bienvenido a mi mundo :3 Soy Bahar Rafeenekoo y estudio 2º de Bachillerato en IES Miguel de Cervantes de Sevilla.</p>
+
+<!-- BANNER DE BIENVENIDA -->
+<img src="baharhtml/banner.jpg" alt="Banner" class="banner">
+
+<!-- MENÚ SUPERIOR -->
+<nav>
+  <ul>
+    <!-- Cada enlace abre en nueva pestaña con target="_blank" -->
+    <li><a href="baharhtml/miviaje.html"  target="_blank">Mi viaje ideal</a></li>
+    <li><a href="baharhtml/sobremi.html"  target="_blank">Sobre mí</a></li>
+    <li><a href="baharhtml/1352.html"  target="_blank">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- CONTENEDOR DE LAS 3 COLUMNAS -->
+<div class="contenedor">
+  <!-- COLUMNA 1: HOBBIES -->
+  <div class="columna">
+    <h2>Mis hobbies</h2>
+    <table>
+      <tr>
+        <td><img src="baharhtml/hellokitty.jpg" alt="Hello Kitty" style="width:100%; height:auto;"></td>
+        <td><img src="baharhtml/music.jpg" alt="Music" style="width:100%; height:auto;"></td>
+      </tr>
+      <tr>
+        <td><img src="baharhtml/gym.jpg" alt="Gym" style="width:100%; height:auto;"></td>
+        <td><img src="baharhtml/libros.jpg" alt="Leer" style="width:100%; height:auto;"></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- COLUMNA 2: CANCIONES -->
+  <div class="columna">
+    <h2>Mis top canciones favoritas</h2>
+    <ol>
+      <li>Problemas Murcianos de Retro 1312</li>
+      <li>Tempest de Ethel Cain</li>
+      <li>Mago oscuro de Cma</li>
+    </ol>
+    <!-- Tabla con miniaturas enlazando a Youtube -->
+    <table style="width:100%; border-collapse: collapse; table-layout: fixed;">
+      <tr>
+        <td style="padding:10px;">
+          <a href="https://www.youtube.com/watch?v=QiNQs2vTWuY" target="_blank">
+            <img src="baharhtml/problemasmurcianos.jpg" alt="Problemas murcianos" style="width:100%; height:auto;">
+          </a>
+        </td>
+        <td style="padding:10px;">
+          <a href="https://www.youtube.com/watch?v=TtUwfMFGdwU&list=RDTtUwfMFGdwU&start_radio=1" target="_blank">
+            <img src="baharhtml/tempest.jpg" alt="Tempest" style="width:100%; height:auto;">
+          </a>
+        </td>
+        <td style="padding:10px;">
+          <a href="https://www.youtube.com/watch?v=hhh5pZTGUqo&list=RDhhh5pZTGUqo&start_radio=1" target="_blank">
+            <img src="baharhtml/magooscuro.jpg" alt="Mago oscuro" style="width:100%; height:auto;">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- COLUMNA 3: INSPIRACIÓN -->
+  <div class="columna">
+    <h2>Mi gran inspiradora: Marián Angulo</h2>
+    <p>Marián es una aristaza sevillana con un espíritu aventurero. Su estilo distorsiona los rostros, lo que más le gusta pintar aparte de los caballos.</p>
+    <p>"Los caballos me conducen a imágenes antiguas en mi mente. No sé por qué..."</p>
+    <!-- Imágenes relacionadas -->
+    <img src="baharhtml/cohete.jpg" alt="Dibujo" style="width:35%; height:auto;">
+    <img src="baharhtml/mujer.jpg" alt="Mujer retratada" style="width:30%; height:auto;">
+    <img src="baharhtml/marian.jpg" alt="Marián Angulo" style="width:50%; height:auto;">
+    <img src="baharhtml/pedestal.jpg" alt="Dibujo" style="width:40%; height:auto;">
+  </div>
+</div>
+
+<!-- ICONO DE INSTAGRAM -->
+<a href="https://www.instagram.com/http.bahar_/" target="_blank">
+  <img src="baharhtml/instagram.jpg" alt="Instagram" style="width:3%; height:auto;">
+</a>
+
+<!-- PIE DE PÁGINA -->
+<footer style="position:fixed;bottom:0;width:100%;background:#C13574;color:white;text-align:center;padding:15px 0;">
+  © 2025 Mi sitio web | Todos los derechos reservados
+  <!-- BOTÓN PARA SUBIR ARRIBA -->
+  <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:60px;right:30px;background:#C13574;color:white;border:none;padding:10px 15px;border-radius:5px;cursor:pointer;">↑</button>
+</footer>
+
+</body>
+</html>
