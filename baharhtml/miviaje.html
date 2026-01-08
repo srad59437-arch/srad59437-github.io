@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Challenge: A picture-perfect trip</title>
+        <meta charset="utf-8">
+
+        <style>
+
+            /* Damos color al fondo de la página y al texto */
+            body { 
+                background-color: rgb(225,192,203); 
+                color: rgb(108,70,117);
+                font-family:"Courier New", monospace; /* Cambiamos el tipo de letra */
+            }
+
+            /* Centramos encabezados */
+            h1, h2, h3, h4 { 
+                text-align: center;
+                font-size: 32px;   /* Cambiamos el tamaño de letra */
+            }
+
+            /* Cambiamos el color de los bordes de la tabla */
+            table, th, td {
+                border: 3px solid purple;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+
+            /* Cambiamos el color de fondo de cada encabezado de la tabla */
+            th {
+                background-color: rgb(205,170,220);
+            }
+
+            /*Centramos los imágenes */
+            img {
+                display: block;
+                margin: auto;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+    
+        <h1 id="INICIO">¡Mi viaje de ensueño a Dinamarca!</h1> <!-- Ponemos el título -->
+
+        <h2>¿Por qué Dinamarca es ideal para un viaje?</h2>  <!-- Ponemos el primer subtítulo -->
+
+        <p align="center">Dinamarca es un país nórdico del norte de Europa, con capital en Copenhague. 
+        Es conocido por ser un país plano con un paisaje de costas arenosas, bosques y lagos, 
+        y una costa extensa. 
+        Está compuesto por numerosas islas rodeadas de hermosas playas.
+        Dinamarca combina historia, naturaleza y cultura en un espacio pequeño y fácil de recorrer.
+        Sus ciudades, como Copenhague y Aarhus, ofrecen una arquitectura moderna junto con encantadores edificios históricos,
+        museos de renombre y una vibrante vida urbana. Además, el país cuenta con impresionantes paisajes naturales,
+        desde los acantilados de Mons Klint hasta playas y parques tranquilos, perfectos para pasear o practicar actividades al aire libre.
+        Su cultura ciclista, su gastronomía innovadora y su alto nivel de seguridad y bienestar hacen que viajar a Dinamarca sea cómodo,
+        agradable y enriquecedor, ofreciendo experiencias que van desde recorrer castillos y jardines hasta disfrutar de la moderna vida urbana danesa.</p>
+
+        <h3>Lugares que me gustaría visitar:</h3>  <!-- Ponemos el segundo subtítulo -->
+
+        <ul style="text-align: center; list-style: none; padding: 0;"> <!-- Introducimos una lista enumerada -->
+
+    <li>1. Los jardines de Tivoli</li>
+    <li>2. El castillo de Rosenborg</li>
+    <li>3. Los acantilados de Mons Klint</li>
+    <li>4. Legoland</li>
+</ul>
+
+        <p></p>
+
+        <!-- Introducimos una tabla con encabezado y bordes -->
+      <table style="margin: auto; border: 1px solid black; border-collapse: collapse; text-align: center;">
+  <tr>
+    <th>Ubicación</th>
+    <th>Población</th>
+    <th>Clima</th>     
+  </tr>
+  <tr>
+    <td>Al suroeste de Suecia y Noruega</td>
+    <td>5,96 a 6 millones de habitantes</td>
+    <td>Oceánico templado</td>
+  </tr>
+</table>
+
+        <p></p>
+
+        <!-- Ponemos dentro de cada imagen un enlace a una web -->
+        <a href="https://es.wikipedia.org/wiki/Jardines_Tivoli"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Tivoligardens2.jpg" width="450" height="266">
+        </a>
+        <p style="text-align: center;"><i>Los jardines de Tivoli</i></p>
+
+
+        <a href="https://es.wikipedia.org/wiki/Castillo_de_Rosenborg">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/8e/e7/d5.jpg" width="450" height="266">
+        </a>
+<p style="text-align: center;"><i>El castillo de Rosenborg</i></p>
+
+
+        <a href="https://viajeadinamarca.com/viaje/dia-6-legoland-dinamarca-o-como-disfrutar-como-ninos/">
+            <img src="https://www.europaadventure.com/wp-content/uploads/2024/05/legoland2.jpg" width="450" height="266">
+        </a>
+                <p style="text-align: center;"><i>Legoland</i></p>
+                
+                <div style="text-align: center; margin: 20px;">
+                
+         <!-- Introducimos un acertijo -->
+  <p><strong>Acertijo:</strong></p>
+  <p>No soy isla, pero rodeado de mar estoy,</p>
+  <p>mis acantilados blancos al viento doy.</p>
+  <p>Mi nombre suena fuerte en Dinamarca y más,</p>
+  <p>y turistas vienen a admirar mi gran faz.</p>
+  <p><strong>¿Quién soy?</strong></p>
+
+</div>
+
+ <!-- Aquí está el botón para ver la respuesta -->
+<div style="text-align: center; margin: 20px 0;">
+  <button onclick="document.getElementById('respuesta').style.display='block'" 
+          style="background-color: pink; color: white; font-size: 20px; padding: 12px 25px; 
+                 border: none; border-radius: 8px; cursor: pointer;">
+    Ver respuesta
+  </button>
+</div>
+
+<!-- Respuesta oculta inicialmente -->
+<p id="respuesta" style="display: none; text-align: center; font-style: italic; color: purple; margin-top: 10px;">
+  Respuesta: Mons Klint
+</p>
+
+
+        <h3> Para conocer más sobre Dinamarca visita las siguientes webs:</h3>
+<!-- Introducimos enlaces a blogs y otras páginas webs -->
+          <center> <p><a href="https://guide.michelin.com/es/es/selection/denmark/restaurantes">
+            ¡Visita esta web para ver los restaurantes michelines en Dinamarca!
+        </a></p>   </center>
+
+          <center> <p><a href="https://spanien.um.dk/es/conoce-dinamarca/informacion-sobre-dinamarca/la-historia/la-mitologia-nordica">
+            ¡Visita esta web para conocer la rica mitología de Dinamarca!
+        </a></p> </center>
+
+        <center> <p><a href="https://levantateybailablog.wordpress.com/2017/09/18/danza-de-los-7-saltos/">
+            ¡Visita esta web para aprender la Danza de los 7 saltos!
+        </a></p> </center>
+
+        <br><br>
+
+        <!-- Botón que lleva al inicio de la web -->
+      <div style="text-align: center; margin: 20px;">
+  <a href="#INICIO">
+    <button style="background-color: pink; color: white; font-size: 24px; padding: 12px 30px; border: none; border-radius: 8px; cursor: pointer;">
+      INICIO
+    </button>
+  </a>
+</div>
+
+        <!-- Fin del documento -->
+        
+    </body>
+</html>

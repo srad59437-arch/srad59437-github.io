@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Top Carreras</title>
+
+<!-- ESTILOS CSS -->
+<style>
+  /* Estilo general del body */
+  body {
+    background-color: #FF97D9; /* Fondo rosa claro */
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Organiza elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Quita márgenes por defecto */
+    font-family: Arial, sans-serif; /* Fuente principal */
+    text-align: center; /* Centra el texto */
+    color: #fff; /* Color blanco para el texto */
+  }
+
+  /* Estilo del título principal */
+  h1 {
+    font-size: 3em; /* Tamaño grande */
+    margin-bottom: 40px; /* Espacio debajo del título */
+  }
+
+  /* Estilo de los botones de carrera */
+  .boton-carrera {
+    background-color: #FF69B4; /* Rosa fuerte */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 15px 30px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+    font-size: 1.2em; /* Tamaño de fuente un poco grande */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
+    transition: transform 0.2s; /* Efecto de transición suave */
+  }
+
+  /* Efecto hover de los botones */
+  .boton-carrera:hover {
+    transform: scale(1.1); /* Aumenta ligeramente tamaño al pasar el mouse */
+  }
+
+  /* Estilo del área donde se mostrará la carrera seleccionada */
+  #resultado {
+    margin-top: 40px; /* Espacio arriba */
+    font-size: 2em; /* Tamaño de letra grande */
+    font-weight: bold; /* Texto en negrita */
+    color: #000; /* Color negro para resaltar */
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Título de la página -->
+  <h1>Top carreras que me gustaría estudiar</h1>
+
+  <!-- Botones que muestran la carrera al hacer click -->
+  <button class="boton-carrera" onclick="mostrarCarrera('Ingeniería en Diseño Industrial y de Producto')">Carrera 1</button>
+  <button class="boton-carrera" onclick="mostrarCarrera('Psicología')">Carrera 2</button>
+  <button class="boton-carrera" onclick="mostrarCarrera('Bellas Artes')">Carrera 3</button>
+
+  <!-- Aquí se mostrará la carrera seleccionada -->
+  <div id="resultado"></div>
+
+  <!-- SCRIPT que hace que al pulsar un botón aparezca el nombre de la carrera -->
+  <script>
+    function mostrarCarrera(carrera) {
+      // Cambia el texto dentro del div #resultado
+      document.getElementById('resultado').innerText = carrera;
+    }
+  </script>
+
+</body>
+</html>
